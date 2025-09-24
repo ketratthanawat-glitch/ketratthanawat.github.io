@@ -125,7 +125,7 @@ h3 {
 }
 
 .sidebar p {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .content-area p {
@@ -144,15 +144,20 @@ h3 {
 }
 
 .work-experiences p:nth-of-type(2) {
-    font-style: italic;
-    color: #666;
+    font-style: normal;;
+    color: #333;
 }
+
 
 .educational-history p:first-of-type {
     font-weight: bold;
     font-size: 1em;
 }
-
+.work-experiences p.project-title {
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 15px;
+}
         
     </style>
 <body>
@@ -210,11 +215,11 @@ h3 {
 
                 <div class="section work-experiences">
                     <h3>PROJECT EXPERIENCES</h3>
-                    <p><strong>วิชา Data Programming</strong></p>
+                    <p class="project-title"><strong>วิชา Data Programming</strong></p>
                     <p>
                         เว็บไซด์ขายสัตว์เลี้ยง ใช้ภาษา C# และ SQL ในการพัฒนา โดยใช้ข้อมูลจาก Sql Server มาและเขียนใน Visual Studio 2022 มีระบบลูกค้าและพนักงานแยกกันและสร้างฟอร์มหลายฟอร์มสำหรับจัดการและเรียบเรียงข้อมูล
                     </p>
-                    <p><strong>วิชา Web Application</strong></p>
+                    <p class="project-title"><strong>วิชา Web Application</strong></p>
                     <p>
                         เว็บไซด์ขายรถ ใช้ภาษา HTML และ CSS ในการพัฒนา สามารถดูรถในร้านได้ เมื่อเมาส์ชี้ที่รถจะแสดงรายละเอียดรถให้ดู มีแถบเมนูแยกประเภทรถที่กดรถประเภทไหนจะเลื่อนอัตโนมัติไปที่รถประเภทนั้น มีเมนูด้านล่างเกี่ยวกับร้าน
                     </p>
@@ -223,9 +228,9 @@ h3 {
 
                 <div class="section educational-history">
                     <h3>EDUCATIONAL HISTORY</h3>
-                    <p>King Mongkut's University of Technology North Bangkok (ปัจจุบันอยู่ปี 3)</p>
-                    <p>คณะวิทยาศาสตร์ประยุกษ์ สาขาคณิตศาสตร์เชิงคอมพิวเตอร์</p>
-                    <p>Major: Web Application</p>
+                    <p>King Mongkut's University of Technology North Bangkok</p>
+                    <p>คณะวิทยาศาสตร์ประยุกษ์ สาขาคณิตศาสตร์เชิงคอมพิวเตอร์ (ปี 3)</p>
+                    <p>Major : Web Application</p>
                 </div>
             </div>
         </div>
