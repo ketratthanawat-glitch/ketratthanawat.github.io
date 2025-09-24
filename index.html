@@ -1,165 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mister Resume - In Thailand</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <style>
-        body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e0cba3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e0cba3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
 
-.resume-container {
-    width: 800px;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
+    .resume-container {
+        width: 800px;
+        background-color: #f7eedd;
+        box-shadow: 0 0 15px rgba(233, 214, 196, 0.1);
+    }
 
-header {
-    background-color: #0c1b2e;
-    color: white;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
+    header {
+        background-color: #0c1b2e;
+        color: white;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
 
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://i.ibb.co/3k1w1sJ/image-e55100.jpg');
-    background-size: cover;
-    background-position: left center;
-    opacity: 0.1;
-    z-index: 1;
-}
+    header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://i.ibb.co/3k1w1sJ/image-e55100.jpg');
+        background-size: cover;
+        background-position: left center;
+        opacity: 0.1;
+        z-index: 1;
+    }
 
-.header-text {
-    position: relative;
-    z-index: 2;
-}
+    .header-text {
+        position: relative;
+        z-index: 2;
+    }
 
-header h1 {
-    font-size: 2.2em;
-    font-weight: bold;
-    margin: 0;
-}
+    header h1 {
+        font-size: 2.2em;
+        font-weight: bold;
+        margin: 0;
+    }
 
-header h2 {
-    font-size: 1.2em;
-    font-weight: normal;
-    margin: 5px 0 10px;
-}
+    header h2 {
+        font-size: 1.2em;
+        font-weight: normal;
+        margin: 5px 0 10px;
+    }
 
-header p {
-    font-family: 'Courier New', monospace;
-    font-size: 0.9em;
-    margin: 0;
-}
+    header p {
+        font-family: 'Courier New', monospace;
+        font-size: 0.9em;
+        margin: 0;
+    }
 
-.header-image {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
-}
+    .header-image {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+    }
 
-.header-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+    .header-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
-.main-content {
-    display: flex;
-}
+    .main-content {
+        display: flex;
+    }
 
-.sidebar {
-    width: 35%;
-    background-color: #3b5998;
-    color: white;
-    padding: 30px 20px;
-    box-sizing: border-box;
-}
+    .sidebar {
+        width: 35%;
+        background-color: #3b5998;
+        color: white;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
 
-.content-area {
-    width: 65%;
-    padding: 30px 40px;
-    box-sizing: border-box;
-    line-height: 1.6;
-    color: #333;
-}
+    .content-area {
+        width: 65%;
+        padding: 30px 40px;
+        box-sizing: border-box;
+        line-height: 1.6;
+        color: #333;
+    }
 
-.section {
-    margin-bottom: 30px;
-}
+    .section {
+        margin-bottom: 30px;
+    }
 
-h3 {
-    font-size: 1.2em;
-    color: #3b5998;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
+    h3 {
+        font-size: 1.2em;
+        color: #3b5998;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
 
-.sidebar h3 {
-    color: white;
-    border-bottom-color: #fff;
-}
+    .sidebar h3 {
+        color: white;
+        border-bottom-color: #fff;
+    }
 
-.sidebar p {
-    margin: 10px 0;
-}
+    .sidebar p {
+        margin: 10px 0;
+    }
 
-.content-area p {
-    margin: 10px 0;
-    font-size: 0.9em;
-}
+    .content-area p {
+        margin: 10px 0;
+        font-size: 0.9em;
+    }
 
-.content-area p strong {
-    font-weight: bold;
-    color: #555;
-}
+    .content-area p strong {
+        font-weight: bold;
+        color: #555;
+    }
 
-.work-experiences p:first-of-type {
-    font-weight: bold;
-    font-size: 1em;
-}
+    .work-experiences p:first-of-type {
+        font-weight: bold;
+        font-size: 1em;
+    }
 
-.work-experiences p:nth-of-type(2) {
-    font-style: normal;;
-    color: #333;
-}
+    .work-experiences p:nth-of-type(2) {
+        font-style: normal;
+        ;
+        color: #333;
+    }
 
 
-.educational-history p:first-of-type {
-    font-weight: bold;
-    font-size: 1em;
-}
-.work-experiences p.project-title {
-    font-weight: bold;
-    font-size: 1em;
-    margin-top: 15px;
-}
-        
-    </style>
+    .educational-history p:first-of-type {
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    .work-experiences p.project-title {
+        font-weight: bold;
+        font-size: 1em;
+        margin-top: 15px;
+    }
+</style>
+
 <body>
     <div class="resume-container">
         <header>
@@ -169,7 +172,8 @@ h3 {
                 <p>programmer : Front-End Developer : coder</p>
             </div>
             <div class="header-image">
-                <img src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.6435-9/79761688_524048514851790_811853001965699072_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=3AnU7gMFmzUQ7kNvwF5VYsG&_nc_oc=AdnXBxPZ_f8H-Dgz8oFpfsLRaxh4-oat0Wqyo1iQuJiH-kDDR7TK6FRZAWP4p_Mx7N30pe0tfRZV_iJje2zSWBUT&_nc_zt=23&_nc_ht=scontent.fbkk12-1.fna&_nc_gid=Js6x1w3pssfic4gzLi0Pyw&oh=00_AfbRSXmIgI8ItPX8irPep_-vdsBWUTFPPaR2yac_ZEDHbw&oe=68FB3F8C" alt="Profile Picture">
+                <img src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.6435-9/79761688_524048514851790_811853001965699072_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=3AnU7gMFmzUQ7kNvwF5VYsG&_nc_oc=AdnXBxPZ_f8H-Dgz8oFpfsLRaxh4-oat0Wqyo1iQuJiH-kDDR7TK6FRZAWP4p_Mx7N30pe0tfRZV_iJje2zSWBUT&_nc_zt=23&_nc_ht=scontent.fbkk12-1.fna&_nc_gid=Js6x1w3pssfic4gzLi0Pyw&oh=00_AfbRSXmIgI8ItPX8irPep_-vdsBWUTFPPaR2yac_ZEDHbw&oe=68FB3F8C"
+                    alt="Profile Picture">
             </div>
         </header>
 
@@ -193,8 +197,14 @@ h3 {
                     <p><strong>Military:</strong> Exempted</p>
                     <p><strong>Hometown:</strong> Phatumtani</p>
                 </div>
+                <div class="section">
+                    <h3>LANGUAGES</h3>
+                    <p>Thai: Native</p>
+                    <p>English: Intermediate </p>
+                    
+                </div>
             </div>
-            
+
             <div class="content-area">
                 <div class="section technical-skills">
                     <h3>TECHNICAL SKILLS</h3>
@@ -202,14 +212,21 @@ h3 {
                     <p><strong>Tools:</strong> Visual Code, MySQL, Line, Windows, iPhone 11 Pro, Computer</p>
                     <p><strong>Systems/Frameworks:</strong> React Native</p>
                 </div>
-                
+
                 <div class="section objective">
                     <h3>CAREER OBJECTIVE</h3>
                     <p>
-                        ตำแหน่ง Front-End Developer เป็นบทบาทที่ช่วยให้สามารถนำความรู้ด้านเทคนิคมาผสมผสานกับความคิดสร้างสรรค์ เพื่อพัฒนาและออกแบบประสบการณ์การใช้งานที่ตอบโจทย์ผู้ใช้ได้อย่างมีประสิทธิภาพ อีกทั้งยังเป็นงานที่มีความท้าทาย เปิดโอกาสให้เรียนรู้เทคโนโลยีใหม่ ๆ และได้ทำงานร่วมกับทีมหลากหลายฝ่าย
+                        ตำแหน่ง Front-End Developer
+                        เป็นบทบาทที่ช่วยให้สามารถนำความรู้ด้านเทคนิคมาผสมผสานกับความคิดสร้างสรรค์
+                        เพื่อพัฒนาและออกแบบประสบการณ์การใช้งานที่ตอบโจทย์ผู้ใช้ได้อย่างมีประสิทธิภาพ
+                        อีกทั้งยังเป็นงานที่มีความท้าทาย เปิดโอกาสให้เรียนรู้เทคโนโลยีใหม่ ๆ
+                        และได้ทำงานร่วมกับทีมหลากหลายฝ่าย
                     </p>
                     <p>
-                        กระผมมุ่งมั่นที่จะพัฒนาทักษะด้าน Front-End ให้มีความเชี่ยวชาญมากยิ่งขึ้น ทั้งในด้านการพัฒนาโค้ดที่มีคุณภาพ การออกแบบ UI/UX ที่สอดคล้องกับความต้องการของผู้ใช้ และการทำงานร่วมกับทีมอย่างมีประสิทธิภาพ พร้อมทั้งมีเป้าหมายที่จะต่อยอดความรู้ด้านเทคโนโลยีใหม่ ๆ เพื่อนำมาประยุกต์ใช้ในการสร้างสรรค์ผลงานที่สามารถสร้างคุณค่าและช่วยขับเคลื่อนการเติบโตขององค์กร
+                        กระผมมุ่งมั่นที่จะพัฒนาทักษะด้าน Front-End ให้มีความเชี่ยวชาญมากยิ่งขึ้น
+                        ทั้งในด้านการพัฒนาโค้ดที่มีคุณภาพ การออกแบบ UI/UX ที่สอดคล้องกับความต้องการของผู้ใช้
+                        และการทำงานร่วมกับทีมอย่างมีประสิทธิภาพ พร้อมทั้งมีเป้าหมายที่จะต่อยอดความรู้ด้านเทคโนโลยีใหม่ ๆ
+                        เพื่อนำมาประยุกต์ใช้ในการสร้างสรรค์ผลงานที่สามารถสร้างคุณค่าและช่วยขับเคลื่อนการเติบโตขององค์กร
                     </p>
                 </div>
 
@@ -217,11 +234,16 @@ h3 {
                     <h3>PROJECT EXPERIENCES</h3>
                     <p class="project-title"><strong>วิชา Data Programming</strong></p>
                     <p>
-                        เว็บไซด์ขายสัตว์เลี้ยง ใช้ภาษา C# และ SQL ในการพัฒนา โดยใช้ข้อมูลจาก Sql Server มาและเขียนใน Visual Studio 2022 มีระบบลูกค้าและพนักงานแยกกันและสร้างฟอร์มหลายฟอร์มสำหรับจัดการและเรียบเรียงข้อมูล
+                        เว็บไซด์ขายสัตว์เลี้ยง ใช้ภาษา C# และ SQL ในการพัฒนา โดยใช้ข้อมูลจาก Sql Server มาและเขียนใน
+                        Visual Studio 2022
+                        มีระบบลูกค้าและพนักงานแยกกันและสร้างฟอร์มหลายฟอร์มสำหรับจัดการและเรียบเรียงข้อมูล
                     </p>
                     <p class="project-title"><strong>วิชา Web Application</strong></p>
                     <p>
-                        เว็บไซด์ขายรถ ใช้ภาษา HTML และ CSS ในการพัฒนา สามารถดูรถในร้านได้ เมื่อเมาส์ชี้ที่รถจะแสดงรายละเอียดรถให้ดู มีแถบเมนูแยกประเภทรถที่กดรถประเภทไหนจะเลื่อนอัตโนมัติไปที่รถประเภทนั้น มีเมนูด้านล่างเกี่ยวกับร้าน
+                        เว็บไซด์ขายรถ ใช้ภาษา HTML และ CSS ในการพัฒนา สามารถดูรถในร้านได้
+                        เมื่อเมาส์ชี้ที่รถจะแสดงรายละเอียดรถให้ดู
+                        มีแถบเมนูแยกประเภทรถที่กดรถประเภทไหนจะเลื่อนอัตโนมัติไปที่รถประเภทนั้น
+                        มีเมนูด้านล่างเกี่ยวกับร้าน
                     </p>
 
                 </div>
@@ -236,4 +258,5 @@ h3 {
         </div>
     </div>
 </body>
+
 </html>
