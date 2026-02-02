@@ -4,8 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Resume - Thanawat</title>
+    <style>
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #3b5998;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .back-btn:hover {
+            background-color: #2d4373;
+        }
+        @media (max-width: 900px) {
+            .back-btn {
+                position: static;
+                display: block;
+                width: 100px;
+                margin: 10px auto;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <style>
     body {
@@ -17,12 +43,17 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+        /* เพิ่ม padding เพื่อไม่ให้ติดขอบเกินไปในจอมือถือ */
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .resume-container {
         width: 800px;
         background-color: #f7eedd;
         box-shadow: 0 0 15px rgba(233, 214, 196, 0.1);
+        /* เพิ่ม max-width เพื่อรองรับหน้าจอเล็ก */
+        max-width: 100%;
     }
 
     header {
@@ -79,11 +110,14 @@
         overflow: hidden;
         position: relative;
         z-index: 2;
+        border-radius: 50%; /* ทำให้รูปโปรไฟล์กลม */
+        border: 3px solid white;
     }
 
     .header-image img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover; /* แก้ไขรูปเบี้ยว */
         display: block;
     }
 
@@ -144,13 +178,6 @@
         font-size: 1em;
     }
 
-    .work-experiences p:nth-of-type(2) {
-        font-style: normal;
-        ;
-        color: #333;
-    }
-
-
     .educational-history p:first-of-type {
         font-weight: bold;
         font-size: 1em;
@@ -161,9 +188,31 @@
         font-size: 1em;
         margin-top: 15px;
     }
+
+    /* Responsive Design สำหรับมือถือ */
+    @media (max-width: 768px) {
+        .main-content {
+            flex-direction: column;
+        }
+        .sidebar, .content-area {
+            width: 100%;
+        }
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+        .header-image {
+            margin-top: 20px;
+        }
+        .resume-container {
+            width: 100%;
+        }
+    }
 </style>
 
 <body>
+    <a href="index.html" class="back-btn">← Home</a>
+
     <div class="resume-container">
         <header>
             <div class="header-text">
@@ -201,7 +250,6 @@
                     <h3>LANGUAGES</h3>
                     <p>Thai: Native</p>
                     <p>English: Intermediate </p>
-                    
                 </div>
             </div>
 
